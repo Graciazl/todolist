@@ -1,0 +1,17 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "A jQuery todo app; ",
+  "main": "index.js",
+  "scripts": {
+    "test": "git repository"
+  },
+  "keywords": [
+    "todolist"
+  ],
+  "author": "Lan",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
