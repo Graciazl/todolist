@@ -3,14 +3,16 @@
 <head >
     <meta charset="UTF-8">
     <title>Todo List App</title>
+    <link rel="stylesheet" href="node_modules/normalize.css">
     <link rel="stylesheet" href="css/css.css">
     <script src="node_modules/jquery/dist/jquery.js"></script>
 </head>
 <body>
 <div class="container">
+    <h1>My todo list</h1>
     <div class="add-task">
-        <input type="text">
-        <button>summit</button>
+        <input type="text" placeholder="e.g. Shoopping at Costco">
+        <button type="submit">summit</button>
     </div>
     <div class="task-list">
         <div class="task-item">
@@ -19,6 +21,13 @@
             <span>delete</span>
             <span>detail</span>
         </div>
+        <div class="task-list">
+            <div class="task-item">
+                <span><input type="checkbox"></span>
+                <span class="task-content">item content 2</span>
+                <span>delete</span>
+                <span>detail</span>
+            </div>
     </div>
     <div class="task-detail">
         <div class="content"></div>
@@ -30,7 +39,9 @@
             <button type="submit">summit</button>
         </div>
     </div>
+    <div class="task-detail-mask">
 
+    </div>
 </div>
 <script src="js/script.js"></script>
 </body>
