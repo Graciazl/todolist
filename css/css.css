@@ -53,7 +53,7 @@ h1 {
     background: gainsboro;
 }
 
-input[type = text], input[type = date] {
+input[type = text], input[type = date], textarea {
     display: block;
     width: 100%;
     border: 0;
@@ -66,11 +66,13 @@ input[type = text], input[type = date] {
 input[type = text]:hover,
 input[type = text]:focus,
 input[type = date]:hover,
-input[type = date]:focus{
-    background: #ffffff;
+input[type = date]:focus,
+textarea:hover,
+textarea:focus {
+    background: #f7f7f7;
 }
 
-input, .task-item, button, .task-detail-mask {
+input, .task-item, button, .task-detail-mask, textarea {
     border-radius: 3px;
     padding: 10px;
     margin-bottom: 2px;
@@ -92,6 +94,16 @@ button:hover {
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 50%;
+    height: 100%;
+    display: none;
+}
+
+.task-detail .content{
+    padding: 10px;
+    color: #333333;
+    background: #ffffff;
+    cursor: pointer;
 }
 
 .task-detail-mask {
@@ -101,4 +113,10 @@ button:hover {
     right: 0;
     left: 0;
     background: rgba(30, 30, 30, .6);
+    display: none;
+}
+
+textarea {
+    border: 0;
+    min-height: 70px;
 }
